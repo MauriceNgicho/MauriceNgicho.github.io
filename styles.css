@@ -1,28 +1,72 @@
+/* Global Styles */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-header {
-    background-color: blue;
-    color: white;
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
+    background: #222;
+    color: white;
 }
 
-section {
-    margin: 20px;
+nav ul {
+    list-style: none;
+    display: flex;
 }
 
-.button {
-    display: inline-block;
-    background-color: #28a745;
-    color: whitesmoke;
-    padding: 10px 20px;
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: linear-gradient(to right, #007BFF, #00C6FF);
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: #007BFF;
+    text-decoration: none;
+    margin: 10px;
     border-radius: 5px;
 }
 
+.btn.secondary {
+    background: #333;
+    color: white;
+}
+
+/* Sections */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Footer */
 footer {
-    margin-top: 20px;
-    font-size: 0.8em;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
